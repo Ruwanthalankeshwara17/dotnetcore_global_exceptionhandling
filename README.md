@@ -13,10 +13,10 @@
 
 # Getting Started
 
-Create a web api project and navigate to the Configure method. There exception handling done only for development enviorenment. Though it is no exception handling middleware,
+Create a web api project and navigate to the Configure method. There exception handling done only for development enviorenment. Though there is no exception handling for production enviorenment,
 ASP.NET Core catch the exception from it's infrastructure, log it and return a blank 500 page to client.
 
-Let's customize this further. There are 2 options. 
+But for production it should be handled more gracefully. There are 2 options. 
 1. Write custom exception handler.
 2. Use Built-in middleware.
 
