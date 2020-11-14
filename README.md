@@ -35,3 +35,5 @@ Finally implement the Write response method. This retrieves exception from Excep
 Finally add it to the HTTP Request pipeline.
 
 ![Configure](./images/Configure.PNG)
+
+Finally uncomment line 31 in WeatherForecastController to simulate an exception.
