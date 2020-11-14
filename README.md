@@ -26,7 +26,7 @@ Second approach is the safer option since it handles most of the edge cases.
 
 First add GlobalExceptionHandler class.Then add UseGlobalExceptionHandler function. In WriteResponse method write details flag is set based on the environment.
 
-![global-exception-handler](./images/Global-exception handler.PNG)
+![global-exception-handler](./images/Global-exception-handler.PNG)
 
 Finally implement the Write response method. This retrieves exception from ExceptionHandlerMiddleware using IExceptionHandlerFeature and build a ProblemDetails object and write the object to response stream.
 
