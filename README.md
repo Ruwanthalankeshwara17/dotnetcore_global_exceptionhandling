@@ -7,9 +7,11 @@
 ## Quick Started
 
 1. Checkout the code.
-2. Open a cmd inside the folder where you cloned the code.
+2. Open a cmd inside the 'GlobalExceptionHandling' folder where you cloned the code.
 3. Run 'dotnet run --project ./GlobalExceptionHandling.csproj' or 'dotnet run'
-4. Open a browser and type 'https://localhost:5000'
+4. Open a browser and type 'https://localhost:5000/weatherforecast'
+5. Uncomment the line no 31 in WeatherForecastController.cs to simulate an error. Rerun the app and refresh the page.
+6. Change the 'ASPNETCORE_ENVIRONMENT' in launch.settings.json to simulate Production enviorenment. Rerun the app and refresh the page.
 
 ## Getting Started
 
