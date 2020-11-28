@@ -24,7 +24,7 @@ But for production it should be handled more gracefully. There are 2 options.
 1. Write custom exception handler.
 2. Use Built-in middleware.
 
-Second approach is the safer option since it handles most of the edge cases.
+Second approach is the safer option since it handles most of the edge cases within it self.
 
 First add GlobalExceptionHandler class.Then add UseGlobalExceptionHandler function. In WriteResponse method write details flag is set based on the environment.
 
@@ -38,4 +38,7 @@ Finally add it to the HTTP Request pipeline.
 
 ![Configure](./images/Configure.PNG)
 
-Finally uncomment line 31 in WeatherForecastController to simulate an exception.
+Then uncomment line 31 in WeatherForecastController to simulate an exception. In this case all the exception details will be displayed.
+Finally simulate the Production enviorenment by changing the 'ASPNETCORE_ENVIRONMENT' to 'Production' in launch.Settings.json file. Only the 'title' and 'status' will be displayed in this scenario since it simulate the production enviorenment.
+
+
